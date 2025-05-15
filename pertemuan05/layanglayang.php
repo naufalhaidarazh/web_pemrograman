@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layang Layang</title>
+</head>
+<body>
+
+    <?php
+        $sisi_panjang = 7;
+        $sisi_pendek = 5;
+        $diagonal1 = 10;
+        $diagonal2 = 6;
+        $luas = 0.5 * $diagonal1 * $diagonal2; 
+        $keliling = 2 * ($sisi_pendek + $sisi_panjang); 
+    ?>
+
+    <a href="index.php">Home</a>
+    <h1>Layang Layang</h1>
+
+    <h4>Luas = 0.5 x diagonal 1 x diagonal 2 = <?php echo $luas ?></h4>
+    <h4>Keliling = 2 x (sisi pendek + sisi panjang) = <?php echo $keliling ?></h4>
+</body>
+</html>
