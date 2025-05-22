@@ -7,17 +7,25 @@
 </head>
 <body>
 
-    <?php
+    <!-- <?php
         $panjang = 19;
         $lebar = 10;
         $luas = $panjang * $lebar; 
         $keliling = 2 * ($panjang + $lebar); 
-    ?>
+    ?> -->
 
     <a href="index.php">Home</a>
     <h1>Persegi Panjang</h1>
 
-    <h4>Luas = panjang x lebar = <?php echo $luas ?></h4>
-    <h4>Keliling = 2 x (panjang + lebar) = <?php echo $keliling ?></h4>
+    <form action="persegipanjangaction.php" method="POST">
+        Masukan panjang
+        <input type="number" name="panjang" id=""><br>
+        Masukan lebar
+        <input type="number" name="lebar" id=""><br>
+        <input type="submit" value="Hitung">
+    </form>
+
+    <!-- <h4>Luas = panjang x lebar = <?php echo $luas ?></h4>
+    <h4>Keliling = 2 x (panjang + lebar) = <?php echo $keliling ?></h4> -->
 </body>
 </html>
